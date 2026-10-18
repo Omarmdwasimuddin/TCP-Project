@@ -1,4 +1,13 @@
-## Heading...
+## NestJS Microservices with TCP Transport
+
+A hands-on project demonstrating TCP-based communication between `auth-service` and `order-service` using NestJS Microservices.
+
+### Topics Covered
+- TCP Transport
+- `ClientProxy` and `ClientsModule`
+- `@MessagePattern()` and `@Payload()`
+- Request-response communication using `send()`
+- Inter-service user validation
 
 [Nx Monorepo Setup](https://github.com/Omarmdwasimuddin/Nx-Monorepo-Setup)
 
