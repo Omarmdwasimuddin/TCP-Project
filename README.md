@@ -142,3 +142,9 @@ async function bootstrap() {
 bootstrap();
 ```
 ---
+
+#### OUTPUT
+<img width="1543" height="340" alt="image" src="https://github.com/user-attachments/assets/b05ce1a4-9490-42f8-8ade-a48af27072a8" />
+
+
+<img width="470" height="249" alt="image" src="https://github.com/user-attachments/assets/a5242f2f-fec7-4011-81b2-e8f8c5d68717" />
