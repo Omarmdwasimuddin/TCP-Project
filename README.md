@@ -153,6 +153,15 @@ bootstrap();
 ---
 
 #### OUTPUT
+#### Terminal
+```bash
+npx nx serve auth-service
+```
+```bash
+npx nx serve order-service
+```
+---
+
 <img width="1543" height="340" alt="image" src="https://github.com/user-attachments/assets/b05ce1a4-9490-42f8-8ade-a48af27072a8" />
 
 
