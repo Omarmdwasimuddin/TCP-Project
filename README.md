@@ -18,7 +18,7 @@ npm i @nestjs/microservices@^11
 ---
 
 #### `auth-service/src/main.ts`
-```bash
+```ts
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app/app.module';
 import { Transport, MicroserviceOptions } from '@nestjs/microservices';
@@ -42,7 +42,7 @@ bootstrap();
 ---
 
 #### `auth-service/src/app/app.controller.ts`
-```bash
+```ts
 import { Controller } from '@nestjs/common';
 import { AppService } from './app.service';
 import { MessagePattern, Payload } from '@nestjs/microservices';
@@ -71,7 +71,7 @@ export class AppController {
 
 
 #### `order-service/src/app/app.module.ts`
-```bash
+```ts
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
@@ -100,7 +100,7 @@ export class AppModule {}
 
 
 #### `order-service/src/app/app.controller.ts`
-```bash
+```ts
 import { Controller, Get, Inject, Param } from '@nestjs/common';
 import { ClientProxy } from '@nestjs/microservices';
 import { firstValueFrom } from 'rxjs';
@@ -132,7 +132,7 @@ export class AppController {
 
 
 #### `order-service/src/main.ts`
-```bash
+```ts
 import { Logger } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app/app.module';
