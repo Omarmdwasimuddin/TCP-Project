@@ -117,12 +117,12 @@ export class AppController {
 
     if(authResponse.status === 'success'){
       return {
-        message: 'Order created successfully!',
+        message: 'User validated successfully!',
         user: authResponse.user,
       }
     }
     return {
-      message: 'Order create failed!',
+      message: 'User validation failed!',
       error: authResponse.message,
     }
   }
@@ -152,11 +152,12 @@ bootstrap();
 ```
 ---
 
-#### OUTPUT
-#### Terminal
+## Running the Services
+Start the Auth Service:
 ```bash
 npx nx serve auth-service
 ```
+Start the Order Service in a separate terminal:
 ```bash
 npx nx serve order-service
 ```
