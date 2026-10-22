@@ -45,7 +45,7 @@ bootstrap();
 ```ts
 import { Controller } from '@nestjs/common';
 import { AppService } from './app.service';
-import { MessagePattern, Payload } from '@nestjs/microservices';
+import { MessagePattern, Payload, RpcException } from '@nestjs/microservices';
 
 
 @Controller()
@@ -63,7 +63,8 @@ export class AppController {
         name: 'Wasim',
       }}
     }
-    return { status: 'error', message: 'User not found!' };
+    // return { status: 'error', message: 'User not found!' };
+    throw new RpcException('User not found!') 
   }
 }
 ```
