@@ -104,7 +104,7 @@ export class AppModule {}
 ```ts
 import { Controller, Inject, Get, Param } from '@nestjs/common';
 
-import { ClientProxy, RpcException } from '@nestjs/microservices';
+import { ClientProxy } from '@nestjs/microservices';
 import { firstValueFrom } from 'rxjs';
 
 @Controller('orders')
@@ -123,7 +123,10 @@ export class AppController {
         user: authResponse.user, 
       };
     }
-    throw new RpcException('User validation failed!');
+    return {
+      message: 'User validation failed!',
+      error: authResponse.message,
+    }
   }
 }
 ```
